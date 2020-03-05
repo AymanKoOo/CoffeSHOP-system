@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{057566A7-BF93-45E4-ABD8-68758D5265C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Kzzu-I-Love-You-Coffee-brown.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\project\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\addform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\addform.Designer.cs">
+      <DependentUpon>addform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\formadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\formadmin.Designer.cs">
+      <DependentUpon>formadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Removeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Removeform.Designer.cs">
+      <DependentUpon>Removeform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\splashscreen.Designer.cs">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\tester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\tester.Designer.cs">
+      <DependentUpon>tester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\updateform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\updateform.Designer.cs">
+      <DependentUpon>updateform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usercontrols\test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usercontrols\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="forms\addform.resx">
+      <DependentUpon>addform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\formadmin.resx">
+      <DependentUpon>formadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Removeform.resx">
+      <DependentUpon>Removeform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\splashscreen.resx">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\tester.resx">
+      <DependentUpon>tester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\updateform.resx">
+      <DependentUpon>updateform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="usercontrols\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Blaugrana-Tez-Icon-Shop-Shop-Coffee-cream.ico" />
+    <Content Include="CoffeShop DB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="drinks.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kzzu-I-Love-You-Coffee-brown.ico" />
+    <Content Include="LOGIN.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Capture.PNG" />
+    <None Include="Resources\search.PNG" />
+    <None Include="Resources\aa.PNG" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
